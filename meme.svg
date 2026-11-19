@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d0430"/>
+      <stop offset="0.34" stop-color="#6a1370"/>
+      <stop offset="0.60" stop-color="#c8285a"/>
+      <stop offset="0.80" stop-color="#f4622c"/>
+      <stop offset="1" stop-color="#ffb43c"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b1030"/>
+      <stop offset="1" stop-color="#100310"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe98a"/>
+      <stop offset="0.55" stop-color="#ffb43c"/>
+      <stop offset="1" stop-color="#ff5f7a"/>
+    </linearGradient>
+    <clipPath id="sunclip"><circle cx="540" cy="498" r="188"/></clipPath>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#sky)"/>
+
+  <!-- Vice City sunset: banded retro sun -->
+  <g clip-path="url(#sunclip)">
+    <circle cx="540" cy="498" r="188" fill="url(#sun)"/>
+    <g fill="url(#sky)" opacity="0.93">
+      <rect x="340" y="548" width="400" height="9"/>
+      <rect x="340" y="576" width="400" height="13"/>
+      <rect x="340" y="608" width="400" height="17"/>
+      <rect x="340" y="644" width="400" height="22"/>
+      <rect x="340" y="684" width="400" height="26"/>
+    </g>
+  </g>
+
+  <rect x="0" y="770" width="1080" height="6" fill="#ff3fa4" opacity="0.85"/>
+  <rect x="0" y="776" width="1080" height="304" fill="url(#road)"/>
+
+  <!-- palms framing the scene -->
+  <g fill="#130316">
+    <g transform="translate(92 788)">
+      <path d="M-9 0 C-6 -70 -4 -130 -2 -196 L12 -196 C10 -128 8 -66 11 0 Z"/>
+      <path d="M4 -196 C-40 -232 -96 -240 -140 -222 C-92 -236 -40 -224 0 -186 Z"/>
+      <path d="M4 -196 C46 -238 104 -246 150 -224 C100 -240 48 -226 6 -186 Z"/>
+      <path d="M4 -198 C-18 -252 -10 -300 14 -330 C6 -292 10 -246 18 -200 Z"/>
+      <path d="M4 -198 C30 -248 78 -276 124 -272 C76 -268 34 -238 16 -196 Z"/>
+      <path d="M4 -198 C-26 -244 -74 -264 -116 -254 C-70 -256 -32 -232 -10 -194 Z"/>
+    </g>
+    <g transform="translate(1006 788) scale(-1 1)">
+      <path d="M-9 0 C-6 -70 -4 -130 -2 -196 L12 -196 C10 -128 8 -66 11 0 Z"/>
+      <path d="M4 -196 C-40 -232 -96 -240 -140 -222 C-92 -236 -40 -224 0 -186 Z"/>
+      <path d="M4 -196 C46 -238 104 -246 150 -224 C100 -240 48 -226 6 -186 Z"/>
+      <path d="M4 -198 C-18 -252 -10 -300 14 -330 C6 -292 10 -246 18 -200 Z"/>
+      <path d="M4 -198 C30 -248 78 -276 124 -272 C76 -268 34 -238 16 -196 Z"/>
+      <path d="M4 -198 C-26 -244 -74 -264 -116 -254 C-70 -256 -32 -232 -10 -194 Z"/>
+    </g>
+  </g>
+
+  <!-- Leonida state-line sign -->
+  <g transform="translate(140 500)">
+    <rect x="0" y="0" width="190" height="74" rx="10" fill="#0d5c3a" stroke="#eafff2" stroke-width="6"/>
+    <text x="95" y="34" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="bold"
+          fill="#ffffff" text-anchor="middle" letter-spacing="2">LEONIDA</text>
+    <text x="95" y="61" font-family="DejaVu Sans, sans-serif" font-size="20"
+          fill="#d8ffe8" text-anchor="middle">state line</text>
+  </g>
+
+  <!-- make.fun's ghost, holding the coin, standing on the road -->
+  <g transform="translate(650 470) scale(1.55)">
+    <ellipse cx="0" cy="212" rx="88" ry="16" fill="#000000" opacity="0.45"/>
+    <g filter="url(#glow)">
+      <path d="M-60 120 A60 60 0 0 1 60 120 L60 200 Q45 182 30 200 Q15 182 0 200 Q-15 182 -30 200 Q-45 182 -60 200 Z"
+            fill="#ffffff" stroke="#191419" stroke-width="10" stroke-linejoin="round"/>
+      <path d="M-18 100 Q-15.8 102.2 -13.6 104.4 Q-15.8 106.6 -18 108.8 Q-20.2 106.6 -22.4 104.4 Q-20.2 102.2 -18 100 Z"
+            fill="#191419"/>
+      <path d="M18 92 Q20.6 94.6 23.2 97.2 Q20.6 99.8 18 102.4 Q15.4 99.8 12.8 97.2 Q15.4 94.6 18 92 Z"
+            fill="#191419"/>
+      <path d="M58 146 Q76 150 84 162" fill="none" stroke="#191419" stroke-width="12" stroke-linecap="round"/>
+      <circle cx="86" cy="166" r="11" fill="#ffffff" stroke="#191419" stroke-width="6"/>
+      <circle cx="112" cy="152" r="30" fill="#191419"/>
+      <circle cx="112" cy="152" r="25" fill="#c41c83"/>
+      <path d="M112 130 L118.2 145.4 L134.8 146.2 L121.8 156.6 L126.2 172.6 L112 163.4 L97.8 172.6 L102.2 156.6 L89.2 146.2 L105.8 145.4 Z"
+            fill="#ffffff"/>
+    </g>
+  </g>
+
+  <!-- caption: the launch-day sick day, then the punchline -->
+  <rect x="0" y="0" width="1080" height="254" fill="#100310" opacity="0.80"/>
+  <g font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    <text x="540" y="108" font-size="94" letter-spacing="-1">CALLED IN SICK</text>
+    <text x="540" y="208" font-size="94" letter-spacing="-1">FOR GTA 6</text>
+  </g>
+
+  <rect x="0" y="806" width="1080" height="274" fill="#100310" opacity="0.84"/>
+  <g font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle">
+    <text x="540" y="888" font-size="62" fill="#ffffff">MY AGENT IS OUT</text>
+    <text x="540" y="958" font-size="62" fill="#ffd166">EARNING ON MAKE.FUN</text>
+  </g>
+
+  <g font-family="DejaVu Sans, sans-serif" font-weight="bold" text-anchor="middle" filter="url(#glow)">
+    <text x="540" y="1054" font-size="50" fill="#ff3fa4" letter-spacing="1">make.fun</text>
+  </g>
+</svg>
